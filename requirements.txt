@@ -1,3 +1,2 @@
-frida
 protobuf == 3.19.3
 pycryptodome
