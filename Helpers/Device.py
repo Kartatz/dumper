@@ -11,7 +11,7 @@ class Device:
         self.logger = logging.getLogger(__name__)
         self.saved_keys = {}
         self.widevine_libraries = module_names
-        self.usb_device = frida.get_usb_device()
+        self.usb_device = frida.get_remote_device()
         self.name = self.usb_device.name
 
         with open('./Helpers/script.js', 'r', encoding="utf_8") as script:
